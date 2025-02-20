@@ -5,28 +5,28 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 
 const stats = [
   {
-    title: "Total Revenue",
-    value: "$45,231.89",
-    description: "Lorem ipsum dolor sit amet",
-    icon: "💰"
+    title: "Questions Answered",
+    value: "1,234",
+    description: "Total questions attempted in practice sessions",
+    icon: "📝"
   },
   {
-    title: "Active Users",
-    value: "2,345",
-    description: "Consectetur adipiscing elit",
-    icon: "👥"
-  },
-  {
-    title: "Projects",
-    value: "12",
-    description: "Sed do eiusmod tempor",
-    icon: "📊"
-  },
-  {
-    title: "Tasks Completed",
-    value: "89%",
-    description: "Ut labore et dolore magna",
+    title: "Success Rate",
+    value: "76%",
+    description: "Average correct answers in practice tests",
     icon: "✅"
+  },
+  {
+    title: "Study Hours",
+    value: "45",
+    description: "Total hours spent on practice this month",
+    icon: "⏱️"
+  },
+  {
+    title: "Question Bank",
+    value: "5,000+",
+    description: "Available UKMPPD practice questions",
+    icon: "🏥"
   }
 ];
 </script>
@@ -61,40 +61,40 @@ const stats = [
         <div class="mt-6 grid gap-6 md:grid-cols-2">
           <Card>
             <CardHeader>
-              <CardTitle>Recent Activity 📅</CardTitle>
-              <CardDescription>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</CardDescription>
+              <CardTitle>Recent Practice Sessions 📚</CardTitle>
+              <CardDescription>Track your UKMPPD preparation progress</CardDescription>
             </CardHeader>
             <CardContent>
               <Accordion type="single" collapsible class="w-full">
-                <AccordionItem value="item-1">
-                  <AccordionTrigger>Project Updates</AccordionTrigger>
+                <AccordionItem value="session-1">
+                  <AccordionTrigger>Internal Medicine</AccordionTrigger>
                   <AccordionContent>
                     <div class="space-y-4">
                       <div class="flex items-center">
-                        <span class="mr-2">🎯</span>
+                        <span class="mr-2">🫀</span>
                         <div>
-                          <p class="text-sm font-medium">Project Milestone Achieved</p>
-                          <p class="text-sm text-muted-foreground">Sed do eiusmod tempor incididunt ut labore</p>
+                          <p class="text-sm font-medium">Cardiovascular System Quiz</p>
+                          <p class="text-sm text-muted-foreground">Score: 85% - 45 questions completed</p>
                         </div>
                       </div>
                       <div class="flex items-center">
-                        <span class="mr-2">📝</span>
+                        <span class="mr-2">🫁</span>
                         <div>
-                          <p class="text-sm font-medium">New Documentation Added</p>
-                          <p class="text-sm text-muted-foreground">Ut enim ad minim veniam, quis nostrud</p>
+                          <p class="text-sm font-medium">Respiratory System Quiz</p>
+                          <p class="text-sm text-muted-foreground">Score: 78% - 30 questions completed</p>
                         </div>
                       </div>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
-                <AccordionItem value="item-2">
-                  <AccordionTrigger>Team Activity</AccordionTrigger>
+                <AccordionItem value="session-2">
+                  <AccordionTrigger>Surgery</AccordionTrigger>
                   <AccordionContent>
                     <div class="flex items-center">
-                      <span class="mr-2">👋</span>
+                      <span class="mr-2">🔬</span>
                       <div>
-                        <p class="text-sm font-medium">New Team Member Onboarded</p>
-                        <p class="text-sm text-muted-foreground">Duis aute irure dolor in reprehenderit</p>
+                        <p class="text-sm font-medium">General Surgery Cases</p>
+                        <p class="text-sm text-muted-foreground">Score: 82% - 25 questions completed</p>
                       </div>
                     </div>
                   </AccordionContent>
@@ -105,25 +105,29 @@ const stats = [
 
           <Card>
             <CardHeader>
-              <CardTitle>Quick Actions 🚀</CardTitle>
-              <CardDescription>Excepteur sint occaecat cupidatat non proident.</CardDescription>
+              <CardTitle>Study Resources 📚</CardTitle>
+              <CardDescription>Access your UKMPPD preparation materials</CardDescription>
             </CardHeader>
             <CardContent>
               <Accordion type="single" collapsible class="w-full">
-                <AccordionItem value="action-1">
-                  <AccordionTrigger>Available Actions</AccordionTrigger>
+                <AccordionItem value="resources-1">
+                  <AccordionTrigger>Practice Options</AccordionTrigger>
                   <AccordionContent>
                     <div class="space-y-2">
                       <button class="w-full flex items-center justify-between p-2 bg-secondary rounded-lg hover:bg-secondary/80">
-                        <span>Create New Project</span>
-                        <span>➕</span>
+                        <span>Start New Quiz Session</span>
+                        <span>📝</span>
                       </button>
                       <button class="w-full flex items-center justify-between p-2 bg-secondary rounded-lg hover:bg-secondary/80">
-                        <span>Invite Team Member</span>
-                        <span>👥</span>
+                        <span>Review Previous Answers</span>
+                        <span>📖</span>
                       </button>
                       <button class="w-full flex items-center justify-between p-2 bg-secondary rounded-lg hover:bg-secondary/80">
-                        <span>Generate Report</span>
+                        <span>Contribute Questions</span>
+                        <span>🤝</span>
+                      </button>
+                      <button class="w-full flex items-center justify-between p-2 bg-secondary rounded-lg hover:bg-secondary/80">
+                        <span>View Performance Analytics</span>
                         <span>📊</span>
                       </button>
                     </div>
